@@ -1,6 +1,6 @@
 import urllib2
 import time
-
+import urlparse
 
 class URL:
 
@@ -8,7 +8,6 @@ class URL:
         self.url = url
 
     def fetch(self):
-        print 'Attempting url fetch.'
         OK = False
         tries = 0
         while not OK:
@@ -25,3 +24,7 @@ class URL:
             time.sleep(2)
         html = response.read()
         return html
+        
+    def get_qs(self, key):
+        parsed = urlparse.urlparse(self.url)
+        return urlparse.parse_qs(parsed.query)[key][0].strip()

@@ -1,38 +1,59 @@
 import sqlite3 as db
+from URL import URL
 
 class DB:
 
     def __init__(self, db_name):
         self.conn = db.connect(db_name)
+        self.conn.text_factory = str
         self.cursor = self.conn.cursor()
         
     def create_tables(self):
-        self.cursor.execute('CREATE TABLE IF NOT EXISTS link(id varchar(64)  primary key, url varchar(256), processed boolean)')
-        self.cursor.execute('CREATE TABLE IF NOT EXISTS metadata(id VARCHAR(64) primary key, title text, abstract text, keyphrases text)')
-        # self.cursor.execute('CREATE TABLE IF NOT EXISTS citations(doi_f VARCHAR(64), doi_t VARCHAR(64), context TEXT, PRIMARY KEY(doi_f, doi_t))')
+        self.cursor.execute('CREATE TABLE IF NOT EXISTS link(id varchar(256)  primary key, url varchar(256), processed boolean)')
+        self.cursor.execute('CREATE TABLE IF NOT EXISTS metadata(id VARCHAR(256) primary key, name VARCHAR(64), org VARCHAR(64), genre VARCHAR(64), installs VARCHAR(64))')
+        self.cursor.execute('CREATE TABLE IF NOT EXISTS rating(id VARCHAR(256) primary key, one INTEGER, two INTEGER, three INTEGER, four INTEGER, five INTEGER)')
+        self.cursor.execute('CREATE TABLE IF NOT EXISTS edges(id_f VARCHAR(256), id_t VARCHAR(256), PRIMARY KEY(id_f, id_t))')
+        
+    def add_seeds(self, seed_file):
+        with open(seed_file) as f:
+            lines = f.readlines()
+        for line in lines:
+            line = line.strip()
+            url = URL(line)
+            app_id = url.get_qs('id')
+            if not self.exists('link', url.get_qs('id')):
+                self.insert("link", {
+                            "id": url.get_qs('id'),
+                            "url": line,
+                            "processed": 0
+                })
 
     def insert(self, tablename, data):
         if (tablename == 'link'):
             query = 'INSERT INTO link VALUES (?, ?, 0)'
-            self.cursor.execute(query, (data['doi'], data['url']))
+            self.cursor.execute(query, (data['id'], data['url']))
             self.conn.commit()
         elif (tablename == 'metadata'):
-            query = 'INSERT INTO metadata VALUES (?, ?, ?, ?)'
-            self.cursor.execute(query, (data['doi'], data['title'], data['abstract'], data['keyphrases']))
+            query = 'INSERT INTO metadata VALUES (?, ?, ?, ?, ?)'
+            self.cursor.execute(query, (data['id'], data['name'], data['org'], data['genre'], data['installs']))
             self.conn.commit()
-        elif (tablename == 'citations'):
-            query = 'INSERT INTO citations VALUES (?, ?, ?)'
-            self.cursor.execute(query, (data['doi_f'], data['doi_t'], data['context']))
+        elif (tablename == 'rating'):
+            query = 'INSERT INTO rating VALUES (?, ?, ?, ?, ?, ?)'
+            self.cursor.execute(query, (data['id'], data[1], data[2], data[3], data[4], data[5]))
+            self.conn.commit()
+        elif (tablename == 'edges'):
+            query = 'INSERT INTO edges VALUES (?, ?)'
+            self.cursor.execute(query, (data['id_f'], data['id_t']))
             self.conn.commit()
             
     def exists(self, tablename, key):
         if (tablename == 'link'):
-            query = 'SELECT doi FROM link WHERE doi=?'
+            query = 'SELECT id FROM link WHERE id=?'
             self.cursor.execute(query, (key, ))
             allrows = self.cursor.fetchall()
             return (len(allrows) == 1)
         elif (tablename == 'metadata'):
-            query = 'SELECT doi FROM metadata WHERE doi=?'
+            query = 'SELECT id FROM metadata WHERE id=?'
             self.cursor.execute(query, (key, ))
             allrows = self.cursor.fetchall()
             return (len(allrows) == 1)
@@ -42,9 +63,9 @@ class DB:
             count = self.cursor.fetchall()[0][0]
             return (count == 1)
     
-    def update_link(self, doi, status):
-        query = 'UPDATE link SET processed = ? WHERE doi = ?'
-        self.cursor.execute(query, (status, doi, ))
+    def update_link(self, aid, status):
+        query = 'UPDATE link SET processed = ? WHERE id = ?'
+        self.cursor.execute(query, (status, aid, ))
         self.conn.commit()
         
     def count_unpr(self):
@@ -57,30 +78,6 @@ class DB:
         self.cursor.execute(query)
         return self.cursor.fetchall()[0][1]
         
-    def del_all(self):
-        self.cursor.execute('DELETE FROM link;')
-        self.cursor.execute('DELETE FROM citations;')
-        self.cursor.execute('DELETE FROM metadata;')
-        self.conn.commit()
-        
     def select_all(self, table):
         self.cursor.execute('SELECT * FROM ' + table)
         return self.cursor.fetchall()
-    
-    def get_all(self, table):
-        self.cursor.execute('SELECT * FROM ' + table)
-        return self.cursor.fetchall()
-    
-    def table_to_star_sep(self, table):
-        allrows = self.get_all(table)
-        f = open(table + '.txt', 'w')
-        for row in allrows[1:3]:
-            for i in range(0, len(row)):
-                if (i == (len(row) - 1)):
-                    f.write(row[i].encode('utf-8'))
-                else:
-                    f.write(row[i].encode('utf-8') + ' *** ')
-            f.write('\n')
-        f.close()
-        print 'File created.'
-        
