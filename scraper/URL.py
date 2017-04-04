@@ -15,15 +15,20 @@ class URL:
                 response = urllib2.urlopen(self.url)
                 print 'Success : ' + self.url
                 OK = True
+                self.code = 200
+                return response.read()
             except urllib2.HTTPError as e:
                 tries = tries + 1
-                if tries >= 256:
+                if tries >= 3:
+                    self.code = e.code
                     return -1
-                print 'Failure.\nAn HTTP error occured : ' + str(e.code)
+                print 'An HTTP error occured : ' + str(e.code)
                 print 'Refetching : ' + self.url
             time.sleep(2)
-        html = response.read()
-        return html
+        
+    def get_code(self):
+        return self.code
+        
         
     def get_qs(self, key):
         parsed = urlparse.urlparse(self.url)
