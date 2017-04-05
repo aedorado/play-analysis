@@ -56,7 +56,10 @@ while db.count_unpr():
             bar_numbers = bar_numbers[::-1]     # reversing bar numbers list
             rating = {"id": app_id}
             for i in range(1, 6):
-                rating[i] = bar_numbers[i - 1].text.replace(',', '')
+                if len(bar_numbers) is 0:
+                    rating[i] = 0
+                else:
+                    rating[i] = bar_numbers[i - 1].text.replace(',', '')
             print rating
             db.insert('rating', rating)
             
