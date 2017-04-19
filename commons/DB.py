@@ -75,4 +75,8 @@ class DB:
         self.cursor.execute(q)
         return self.cursor.fetchall() 
 
+    def qry(self, query):
+        self.cursor.execute(query)
+        return self.cursor.fetchall()
+
 # DB('../db/play.db').get_table_col('metadata', 'com.whatsapp', 'genre')

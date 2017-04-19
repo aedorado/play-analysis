@@ -3,10 +3,10 @@ import os
 sys.path.insert(0, os.path.abspath('../commons'))
 from DB import DB
 
-def mode():
+def mode(genre):
 	db = DB('../db/play.db')
-	f = open('myfile', 'w')
-	all_meta = db.select_all('metadata')
+	f = open(genre + '.txt', 'w')
+	all_meta = db.qry('SELECT * FROM metadata WHERE genre = \'' + genre + '\'')
 	
 	meta_map = {}
 	meta_map_rev = {}
@@ -24,7 +24,8 @@ def mode():
 	all_cits = db.select_all('edges')
 	for edge in all_cits:
 		try:
-			f.write(str(meta_map_rev[edge[0]]) + ' ' + str(meta_map_rev[edge[1]]) + '\n')
+			if (edge[0] in meta_map_rev) and (edge[1] in meta_map_rev):
+				f.write(str(meta_map_rev[edge[0]]) + ' ' + str(meta_map_rev[edge[1]]) + '\n')
 			# f.write(str(cit[0]) + ' ' + str(cit[1]) + '\n')
 			# print meta_map_rev[cit[1]]
 			# print (str(meta_map_rev[cit[0]]) + ' ' + str(meta_map_rev[cit[1]]) + '\n')
@@ -34,4 +35,4 @@ def mode():
 
 	
 if __name__ == "__main__":
-	print mode()
+	print mode(sys.argv[1])
