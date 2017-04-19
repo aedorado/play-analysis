@@ -21,18 +21,16 @@ def mode():
 		f.write(str(key) + " " + "\"" + meta_map[key] + "\"\n")
 
 	f.write("*Arcs\n")
-	for meta in all_meta:
-		cid = meta[0]
-		all_cits = db.get_cit_from(cid)
-		for cit in all_cits:
-			try:
-				f.write(str(meta_map_rev[cit[0]]) + ' ' + str(meta_map_rev[cit[1]]) + '\n')
-				# f.write(str(cit[0]) + ' ' + str(cit[1]) + '\n')
-				# print meta_map_rev[cit[1]]
-				# print (str(meta_map_rev[cit[0]]) + ' ' + str(meta_map_rev[cit[1]]) + '\n')
-			except Exception:
-				pass
-		f.close()
+	all_cits = db.select_all('edges')
+	for edge in all_cits:
+		try:
+			f.write(str(meta_map_rev[edge[0]]) + ' ' + str(meta_map_rev[edge[1]]) + '\n')
+			# f.write(str(cit[0]) + ' ' + str(cit[1]) + '\n')
+			# print meta_map_rev[cit[1]]
+			# print (str(meta_map_rev[cit[0]]) + ' ' + str(meta_map_rev[cit[1]]) + '\n')
+		except Exception:
+			pass
+	f.close()
 
 	
 if __name__ == "__main__":
