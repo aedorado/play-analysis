@@ -81,8 +81,11 @@ def sub_community():
 				result += result_inline + meta_map[app_id] + '\n'
 
 
-	f.write(result)
-	f.close()
+	with open('data.txt', 'w') as outfile:
+	    json.dump(data, outfile)
+
+	# f.write(result)
+	# f.close()
 
 	
 if __name__ == "__main__":

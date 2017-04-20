@@ -43,6 +43,19 @@ def other_mode():
 		karr = genre_map[genre]
 		print genre + "\tMode: " + str(karr.index(max(karr)))
 
+def avg_mode():
+	db = DB('../db/play.db')
+	rows = db.qry('select metadata.id, round((one + two * 2 + three * 3 + four * 4 + five * 5.0)/(one + two + three + four + five), 1) as avgr, (one + two + three + four + five) as numr from metadata, rating WHERE metadata.id=rating.id ORDER BY avgr * numr DESC')
+	mode_map = {}
+	for row in rows:
+		rating = row[1]
+		if rating in mode_map:
+			mode_map[rating] = 1 + mode_map[rating]
+		else:
+			mode_map[rating] = 1
+	print mode_map
+	print max(mode_map, key=lambda i: mode_map[i])
+
 if __name__ == "__main__":
 	# print genre_wise_mode()
-	print other_mode()
+	print avg_mode()

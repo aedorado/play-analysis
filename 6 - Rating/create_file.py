@@ -14,7 +14,6 @@ def create():
 		count = count + 1
 
 	f.close()
-
 	
 if __name__ == "__main__":
 	create()
