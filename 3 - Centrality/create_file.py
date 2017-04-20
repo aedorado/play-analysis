@@ -5,7 +5,7 @@ from DB import DB
 
 def mode():
 	db = DB('../db/play.db')
-	f = open('myfile', 'w')
+	f = open('myfile.txt', 'w')
 	all_meta = db.select_all('metadata')
 	
 	meta_map = {}
