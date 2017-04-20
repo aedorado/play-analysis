@@ -1,4 +1,6 @@
 *.net
 *.txt
 *.pyc
+*.gml
+*.csv
 db/*

@@ -156,14 +156,27 @@ def sub_community():
 	#print centrality[200]
 
 	result2 = {}
-
+	result_final = {}
 	#print centrality
 
-	for i in range(100, 1000, 100) :
+	count = 0
+	lower = 10
+	upper = 210
+	step = 10
+
+	#print result[5]
+
+	for i in range(lower, upper, step) :
+		result2 = {}
 		centrality_subset = set(centrality[:i])
+		#print centrality_subset
 
 		for connectedness in result :
-			result2.update({connectedness : set(result[connectedness]) & centrality_subset})
+			#result2.update({connectedness : [x for x in list(set(result[connectedness]) & centrality_subset)]})
+			temp_l = list(set(result[connectedness]) & centrality_subset)
+			#print  temp_l
+			result2.update({connectedness : [meta_map[x] for x in temp_l]})
+		result_final.update({i : result2})
 
 		for connectedness in result2 :
 			print("conn = %d : len = %d" %(connectedness, len(result2[connectedness])))
@@ -171,10 +184,12 @@ def sub_community():
 
 	#print result2
 
+	#f.write('output.txt', 'w')
 	#f.write(result)
 	#f.close()
-	'''with open('output.txt', 'w') as outfile:
-		json.dump(result2, outfile, indent = 2)'''
+	#print 'OKOKOKK'
+	with open('output_rated.txt', 'w') as outfile:
+		json.dump(result_final, outfile, indent = 2)
 
 
 def main() :

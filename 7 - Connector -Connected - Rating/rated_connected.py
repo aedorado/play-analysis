@@ -129,13 +129,13 @@ def sub_community():
 		if not edge[0] in meta_map_rev or not edge[1] in meta_map_rev :
 			continue
 
-		if meta_map_rev[edge[0]] in meta_map_app_edge_to_genre :
-			if meta_map_id_genre[meta_map_rev[edge[1]]] in meta_map_app_edge_to_genre[meta_map_rev[edge[0]]] :
+		if meta_map_rev[edge[1]] in meta_map_app_edge_to_genre :
+			if meta_map_id_genre[meta_map_rev[edge[0]]] in meta_map_app_edge_to_genre[meta_map_rev[edge[1]]] :
 				pass
 			else :
-				meta_map_app_edge_to_genre[meta_map_rev[edge[0]]] += [meta_map_id_genre[meta_map_rev[edge[1]]]]
+				meta_map_app_edge_to_genre[meta_map_rev[edge[1]]] += [meta_map_id_genre[meta_map_rev[edge[0]]]]
 		else :
-			meta_map_app_edge_to_genre.update({meta_map_rev[edge[0]] : [meta_map_id_genre[meta_map_rev[edge[1]]]]})
+			meta_map_app_edge_to_genre.update({meta_map_rev[edge[1]] : [meta_map_id_genre[meta_map_rev[edge[0]]]]})
 	
 	result = {}
 	'''
@@ -154,14 +154,22 @@ def sub_community():
 	#print centrality[200]
 
 	result2 = {}
+	result_final = {}
 
 	#print centrality
+	count = 0
+	lower = 10
+	upper = 210
+	step = 10
 
-	for i in range(10, 101, 10) :
+	for i in range(lower, upper, step) :
+		result2 = {}
 		centrality_subset = set(centrality[:i])
 
 		for connectedness in result :
-			result2.update({connectedness : set(result[connectedness]) & centrality_subset})
+			temp_l = list(set(result[connectedness]) & centrality_subset)
+			result2.update({connectedness : [meta_map[x] for x in temp_l]})
+		result_final.update({i : result2})
 
 		for connectedness in result2 :
 			print("conn = %d : len = %d" %(connectedness, len(result2[connectedness])))
@@ -171,8 +179,8 @@ def sub_community():
 
 	#f.write(result)
 	#f.close()
-	'''with open('output.txt', 'w') as outfile:
-		json.dump(result2, outfile, indent = 2)'''
+	with open('output_rated_connected.txt', 'w') as outfile:
+		json.dump(result_final, outfile, indent = 2)
 
 
 def main() :
