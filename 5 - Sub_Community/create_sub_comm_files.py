@@ -89,29 +89,28 @@ def sub_community():
 		print genre
 		# result += genre + ' : \n'
 		for wrd in overlap[genre]:
-			if len(overlap[genre][wrd]) < 50:
-				continue
-			print '->\t' + wrd
-			newfilename = 'lemma_cat_folder/' + genre + '_' + wrd
-			filenames.append(newfilename)
-			f = open(newfilename, 'w')
-			f.write("*Vertices " + str(len(overlap[genre][wrd])) + "\n")
-			for app_id in overlap[genre][wrd]:
-				f.write(str(app_id) + " " + "\"" + meta_map[app_id] + "\"\n")
-			f.write("*Arcs\n")
-			for app_id in overlap[genre][wrd]:
-				try:
-					for cit in cit_map[app_id]:
-						if cit in overlap[genre][wrd]:
-							f.write(str(app_id) + ' ' + str(cit) + '\n')
-				except Exception:
-					print 'Exception for ' + meta_map[app_id]
-		# 	#print "yes"
-		# 	result_inline = '\t\t'
-		# 	result += '\t' + wrd + ' : \n'
-		# 	for app_id in overlap[genre][wrd] :
-		# 		result += result_inline + meta_map[app_id] + '\n'
-			f.close()
+			if len(overlap[genre][wrd]) > 100:
+				print '->\t' + wrd
+				newfilename = 'lemma_cat_folder/' + genre + '_' + wrd
+				filenames.append(newfilename)
+				f = open(newfilename, 'w')
+				f.write("*Vertices " + str(len(overlap[genre][wrd])) + "\n")
+				for app_id in overlap[genre][wrd]:
+					f.write(str(app_id) + " " + "\"" + meta_map[app_id] + "\"\n")
+				f.write("*Arcs\n")
+				for app_id in overlap[genre][wrd]:
+					try:
+						for cit in cit_map[app_id]:
+							if cit in overlap[genre][wrd]:
+								f.write(str(app_id) + ' ' + str(cit) + '\n')
+					except Exception:
+						print 'Exception for ' + meta_map[app_id]
+			# 	#print "yes"
+			# 	result_inline = '\t\t'
+			# 	result += '\t' + wrd + ' : \n'
+			# 	for app_id in overlap[genre][wrd] :
+			# 		result += result_inline + meta_map[app_id] + '\n'
+				f.close()
 
 
 	# f.write(result)

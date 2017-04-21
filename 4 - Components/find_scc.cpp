@@ -1,15 +1,14 @@
 // A C++ program to find strongly connected components in a given
 // directed graph using Tarjan's algorithm (single DFS)
-#include <iostream>
-#include <string>
-#include <vector>
-#include <fstream>
-#include <sstream>
-#include <list>
-#include <stack>
+#include <string.h>
+#include <bits/stdc++.h>
 #define NIL -1
 
 using namespace std;
+
+map<int, string> string_map;
+map<int, int> node_node_map;
+map<int, int> node_node_map_rev;
  
 // A class that represents an directed graph
 class Graph
@@ -91,12 +90,12 @@ void Graph::SCCUtil(int u, int disc[], int low[], stack<int> *st,
         while (st->top() != u)
         {
             w = (int) st->top();
-            cout << w << " ";
+            cout << string_map[w] << "\n";
             stackMember[w] = false;
             st->pop();
         }
         w = (int) st->top();
-        cout << w << "\n";
+        cout << string_map[w] << "\n\n\t------------\n\n";
         stackMember[w] = false;
         st->pop();
     }
@@ -138,21 +137,25 @@ std::string trim(const std::string &s)
     return std::string(it, rit.base());
 }
 
- 
 // Driver program to test above function
-int main()
+int main(int argc, char *argv[])
 {
     // THis part has to be automated to read from file and write to file
     string line;
     string buf;
 
-    ifstream myfile ("cmyfile.net");
+    // for (int i = 0; i != argc; ++i) {
+    //     printf("%d %s\n", i, argv[i]);
+    // }
+
+    string filename = argv[1];
+    filename = "lemma_cat_folder/" + filename;
+    cout << filename << endl;
+    ifstream myfile (filename.c_str());
     int vertices_count = 0;
     int count = 0;
 
     Graph *g1;
-
-    cout << "ok" << endl;
 
     if (myfile.is_open()) {
         while(getline(myfile, line)) {
@@ -162,7 +165,7 @@ int main()
             stringstream ss(line);
             vector<string> tokens;
             //cout << count << endl;
-            //cout << line << endl;
+            // cout << line << endl;
             while (ss >> buf) {
                 tokens.push_back(buf);
                 //cout << buf << endl;
@@ -172,10 +175,18 @@ int main()
                 g1 = new Graph(vertices_count);
                 vertices_count++;
                 count = 1;
-            } else if (count++ <= vertices_count) {
-                //pass
+            } else if (count < vertices_count) {
+                // cout << count << '\t' << tokens[0] << endl;
+                string_map[count - 1] = tokens[1];
+                node_node_map[count - 1] = stoi(tokens[0]);
+                node_node_map_rev[stoi(tokens[0])] = count - 1;
+                ++count;
+            } else if (count++ == vertices_count) {
+                cout << line << endl;
+                //pass node_node_map_rev
             } else {
-                g1 -> addEdge(stoi(tokens[0]), stoi(tokens[1]));
+                cout << line << endl;
+                g1 -> addEdge(node_node_map_rev[stoi(tokens[0])], node_node_map_rev[stoi(tokens[1])]);
             }
         }
     }
