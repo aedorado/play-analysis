@@ -32,6 +32,8 @@ def mode():
 	f.write("]")
 	f.close()
 
+	print(len(all_cits))
+
 	
 if __name__ == "__main__":
 	print mode()
