@@ -1,0 +1,145 @@
+1143385
+Non-Clubbed :: 
+
+top = 10 outdegree =  2 len = 3
+top = 10 outdegree =  3 len = 0
+top = 10 outdegree =  4 len = 0
+top = 10 outdegree =  5 len = 0
+top = 10 outdegree =  6 len = 0
+top = 10 outdegree =  7 len = 0
+top = 20 outdegree =  2 len = 3
+top = 20 outdegree =  3 len = 0
+top = 20 outdegree =  4 len = 0
+top = 20 outdegree =  5 len = 0
+top = 20 outdegree =  6 len = 0
+top = 20 outdegree =  7 len = 0
+top = 30 outdegree =  2 len = 4
+top = 30 outdegree =  3 len = 0
+top = 30 outdegree =  4 len = 0
+top = 30 outdegree =  5 len = 0
+top = 30 outdegree =  6 len = 0
+top = 30 outdegree =  7 len = 0
+top = 40 outdegree =  2 len = 5
+top = 40 outdegree =  3 len = 0
+top = 40 outdegree =  4 len = 0
+top = 40 outdegree =  5 len = 0
+top = 40 outdegree =  6 len = 0
+top = 40 outdegree =  7 len = 0
+top = 50 outdegree =  2 len = 5
+top = 50 outdegree =  3 len = 0
+top = 50 outdegree =  4 len = 0
+top = 50 outdegree =  5 len = 0
+top = 50 outdegree =  6 len = 0
+top = 50 outdegree =  7 len = 0
+top = 60 outdegree =  2 len = 7
+top = 60 outdegree =  3 len = 0
+top = 60 outdegree =  4 len = 0
+top = 60 outdegree =  5 len = 0
+top = 60 outdegree =  6 len = 0
+top = 60 outdegree =  7 len = 0
+top = 70 outdegree =  2 len = 9
+top = 70 outdegree =  3 len = 0
+top = 70 outdegree =  4 len = 0
+top = 70 outdegree =  5 len = 0
+top = 70 outdegree =  6 len = 0
+top = 70 outdegree =  7 len = 0
+top = 80 outdegree =  2 len = 10
+top = 80 outdegree =  3 len = 0
+top = 80 outdegree =  4 len = 0
+top = 80 outdegree =  5 len = 0
+top = 80 outdegree =  6 len = 0
+top = 80 outdegree =  7 len = 0
+top = 90 outdegree =  2 len = 11
+top = 90 outdegree =  3 len = 0
+top = 90 outdegree =  4 len = 0
+top = 90 outdegree =  5 len = 0
+top = 90 outdegree =  6 len = 0
+top = 90 outdegree =  7 len = 0
+top = 100 outdegree =  2 len = 11
+top = 100 outdegree =  3 len = 0
+top = 100 outdegree =  4 len = 0
+top = 100 outdegree =  5 len = 0
+top = 100 outdegree =  6 len = 0
+top = 100 outdegree =  7 len = 0
+top = 110 outdegree =  2 len = 12
+top = 110 outdegree =  3 len = 0
+top = 110 outdegree =  4 len = 0
+top = 110 outdegree =  5 len = 0
+top = 110 outdegree =  6 len = 0
+top = 110 outdegree =  7 len = 0
+top = 120 outdegree =  2 len = 13
+top = 120 outdegree =  3 len = 0
+top = 120 outdegree =  4 len = 0
+top = 120 outdegree =  5 len = 0
+top = 120 outdegree =  6 len = 0
+top = 120 outdegree =  7 len = 0
+top = 130 outdegree =  2 len = 13
+top = 130 outdegree =  3 len = 0
+top = 130 outdegree =  4 len = 0
+top = 130 outdegree =  5 len = 0
+top = 130 outdegree =  6 len = 0
+top = 130 outdegree =  7 len = 0
+top = 140 outdegree =  2 len = 14
+top = 140 outdegree =  3 len = 0
+top = 140 outdegree =  4 len = 0
+top = 140 outdegree =  5 len = 0
+top = 140 outdegree =  6 len = 0
+top = 140 outdegree =  7 len = 0
+top = 150 outdegree =  2 len = 14
+top = 150 outdegree =  3 len = 1
+top = 150 outdegree =  4 len = 0
+top = 150 outdegree =  5 len = 0
+top = 150 outdegree =  6 len = 0
+top = 150 outdegree =  7 len = 0
+top = 160 outdegree =  2 len = 14
+top = 160 outdegree =  3 len = 1
+top = 160 outdegree =  4 len = 0
+top = 160 outdegree =  5 len = 0
+top = 160 outdegree =  6 len = 0
+top = 160 outdegree =  7 len = 0
+top = 170 outdegree =  2 len = 15
+top = 170 outdegree =  3 len = 1
+top = 170 outdegree =  4 len = 0
+top = 170 outdegree =  5 len = 0
+top = 170 outdegree =  6 len = 0
+top = 170 outdegree =  7 len = 0
+top = 180 outdegree =  2 len = 15
+top = 180 outdegree =  3 len = 1
+top = 180 outdegree =  4 len = 0
+top = 180 outdegree =  5 len = 0
+top = 180 outdegree =  6 len = 0
+top = 180 outdegree =  7 len = 0
+top = 190 outdegree =  2 len = 17
+top = 190 outdegree =  3 len = 1
+top = 190 outdegree =  4 len = 0
+top = 190 outdegree =  5 len = 0
+top = 190 outdegree =  6 len = 0
+top = 190 outdegree =  7 len = 0
+top = 200 outdegree =  2 len = 18
+top = 200 outdegree =  3 len = 1
+top = 200 outdegree =  4 len = 0
+top = 200 outdegree =  5 len = 0
+top = 200 outdegree =  6 len = 0
+top = 200 outdegree =  7 len = 0
+Clubbed :: 
+
+10 : 3
+20 : 4
+30 : 5
+40 : 7
+50 : 10
+60 : 15
+70 : 19
+80 : 20
+90 : 22
+100 : 23
+110 : 26
+120 : 27
+130 : 28
+140 : 30
+150 : 31
+160 : 32
+170 : 33
+180 : 35
+190 : 39
+200 : 41
