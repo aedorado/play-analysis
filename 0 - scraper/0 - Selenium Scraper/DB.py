@@ -10,7 +10,7 @@ class DB:
         
     def create_tables(self):
         self.cursor.execute('CREATE TABLE IF NOT EXISTS link(id varchar(256)  primary key, url varchar(256), processed boolean)')
-        self.cursor.execute('CREATE TABLE IF NOT EXISTS metadata(id VARCHAR(256) primary key, name VARCHAR(64), org VARCHAR(64), genre VARCHAR(64), description TEXT, installs VARCHAR(64), tstamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
+        self.cursor.execute('CREATE TABLE IF NOT EXISTS metadata(id VARCHAR(256) primary key, name VARCHAR(64), org VARCHAR(64), genre VARCHAR(64), description TEXT, installs VARCHAR(64), version VARCHAR(64), address VARCHAR(256), website VARCHAR(256), editors VARCHAR(1), permissions TEXT, tstamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP)')
         self.cursor.execute('CREATE TABLE IF NOT EXISTS rating(id VARCHAR(256) primary key, one INTEGER, two INTEGER, three INTEGER, four INTEGER, five INTEGER)')
         self.cursor.execute('CREATE TABLE IF NOT EXISTS edges(id_f VARCHAR(256), id_t VARCHAR(256), PRIMARY KEY(id_f, id_t))')
         
@@ -34,11 +34,11 @@ class DB:
             self.cursor.execute(query, (data['id'], data['url']))
             self.conn.commit()
         elif (tablename == 'metadata'):
-            query = 'INSERT INTO metadata (id, name, org, genre, description, installs) VALUES (?, ?, ?, ?, ?, ?)'
-            self.cursor.execute(query, (data['id'], data['name'], data['org'], data['genre'], data['description'], data['installs']))
+            query = 'INSERT INTO metadata (id, name, org, genre, description, installs, version, address, website, editors, permissions) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
+            self.cursor.execute(query, (data['id'], data['name'], data['org'], data['genre'], data['description'], data['installs'], data['version'], data['address'], data['website'], data['editors'], data['permissions']))
             self.conn.commit()
         elif (tablename == 'rating'):
-            query = 'INSERT INTO rating () VALUES (?, ?, ?, ?, ?, ?)'
+            query = 'INSERT INTO rating VALUES (?, ?, ?, ?, ?, ?)'
             self.cursor.execute(query, (data['id'], data[1], data[2], data[3], data[4], data[5]))
             self.conn.commit()
         elif (tablename == 'edges'):
@@ -82,3 +82,20 @@ class DB:
         self.cursor.execute('SELECT * FROM ' + table)
         return self.cursor.fetchall()
         
+
+
+
+                        #     'id': app_id,
+                        #     'name': id_app_title,
+                        #     'org': name,
+                        #     'genre': genre,
+                        #     'installs': installs,
+                        #     'description': description,
+                        #     'version': version,
+                        #     'address': address,
+                        # 'website': website,
+                        # 'editor': editors_choice
+
+
+
+                                
