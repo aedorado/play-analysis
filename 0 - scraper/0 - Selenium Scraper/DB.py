@@ -7,6 +7,13 @@ class DB:
         self.conn = db.connect(db_name)
         self.conn.text_factory = str
         self.cursor = self.conn.cursor()
+
+    def truncate_all(self):
+        self.cursor.execute('DELETE FROM rating')
+        self.cursor.execute('DELETE FROM link')
+        self.cursor.execute('DELETE FROM metadata')
+        self.cursor.execute('DELETE FROM edges')
+        self.conn.commit()
         
     def create_tables(self):
         self.cursor.execute('CREATE TABLE IF NOT EXISTS link(id varchar(256)  primary key, url varchar(256), processed boolean)')
@@ -57,9 +64,9 @@ class DB:
             self.cursor.execute(query, (key, ))
             allrows = self.cursor.fetchall()
             return (len(allrows) == 1)
-        elif (tablename == 'citations'):
-            query = 'SELECT COUNT(*) FROM citations WHERE doi_f = ? AND doi_t = ?'
-            self.cursor.execute(query, (key['doi_f'], key['doi_t']))
+        elif (tablename == 'edges'):
+            query = 'SELECT COUNT(*) FROM edges WHERE id_f = ? AND id_t = ?'
+            self.cursor.execute(query, (key['id_f'], key['id_t']))
             count = self.cursor.fetchall()[0][0]
             return (count == 1)
     
@@ -82,20 +89,3 @@ class DB:
         self.cursor.execute('SELECT * FROM ' + table)
         return self.cursor.fetchall()
         
-
-
-
-                        #     'id': app_id,
-                        #     'name': id_app_title,
-                        #     'org': name,
-                        #     'genre': genre,
-                        #     'installs': installs,
-                        #     'description': description,
-                        #     'version': version,
-                        #     'address': address,
-                        # 'website': website,
-                        # 'editor': editors_choice
-
-
-
-                                

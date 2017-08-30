@@ -14,20 +14,18 @@ def compare_source(browser):
 os.system('PATH=$PATH:.')
 
 db = DB('play.db')
-db.create_tables()
+# db.create_tables()
+# db.truncate_all()
 db.add_seeds('seed.txt')
 browser = webdriver.Firefox()
 
-test = 0
-
 count = 0
 
-test = 3
-while test:
+while db.count_unpr():
 
 	count = count + 1
 	url = db.get_unpr()
-	# url = 'https://play.google.com/store/apps/details?id=com.instagram.android&hl=en'
+	# url = 'https://play.google.com/store/apps/details?id=com.sgiggle.production'
 
 	browser.get(url)
 
@@ -40,8 +38,12 @@ while test:
 	genre = browser.find_element_by_xpath('//span[@itemprop="genre"]').text.strip()
 	installs = browser.find_element_by_xpath('//div[@itemprop="numDownloads"]').text.strip()
 	description = browser.find_element_by_xpath('//div[@jsname="C4s9Ed"]').text
-	current_version = browser.find_element_by_xpath('//div[@itemprop="softwareVersion"]').text.strip()
 	website = browser.find_elements_by_class_name('dev-link')[0].get_attribute('href')
+	
+	try:
+		current_version = browser.find_element_by_xpath('//div[@itemprop="softwareVersion"]').text.strip()
+	except common.exceptions.NoSuchElementException:
+		current_version = None
 	
 	try:
 		address = browser.find_element_by_xpath('//div[@class="physical-address"]').text
@@ -106,4 +108,40 @@ while test:
 	print rating
 	db.insert('rating', rating)
 
-	test = test - 1
+	browser.find_element_by_id('close-dialog-button').click()
+	source = browser.page_source
+
+	browser.find_elements_by_class_name('see-more')[0].click()
+	WebDriverWait(browser, 5).until(compare_source)
+
+	lastHeight = browser.execute_script("return document.body.scrollHeight")
+	while True:
+		browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+		time.sleep(2)
+		newHeight = browser.execute_script("return document.body.scrollHeight")
+		if newHeight == lastHeight:
+			break
+		lastHeight = newHeight
+
+	links = browser.find_elements_by_class_name('card-click-target')
+	# print len(links)
+	for link in links:
+		next_url = URL(link.get_attribute('href'))
+		# print next_url
+		if not db.exists('edges', {
+                    "id_f": app_id,
+                    "id_t": next_url.get_qs('id')
+                }):
+			db.insert("edges", {
+                    "id_f": app_id,
+                    "id_t": next_url.get_qs('id')
+                })
+		if not db.exists('link', app_id):
+			# print next_url
+			db.insert("link", {
+			                "id": app_id,
+			                "url": "https://play.google.com" + next_url,
+			                "processed": 0
+			})
+
+	db.update_link(app_id, 1)
