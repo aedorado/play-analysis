@@ -3358,3 +3358,466 @@ Full stack:
 (firefox:24640): GLib-GObject-CRITICAL **: g_object_unref: assertion 'object->ref_count > 0' failed
 1504121111668	Marionette	INFO	Listening on port 54718
 1504121111703	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509450393208	geckodriver	INFO	geckodriver 0.18.0
+1509450393210	geckodriver	INFO	Listening on 127.0.0.1:44521
+1509450394304	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1509450394508	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1509450395160	Marionette	INFO	Enabled via --marionette
+1509450398214	Marionette	INFO	Listening on port 45999
+1509450398318	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509450398346	Marionette	DEBUG	Register listener.js for window 2147483649
+1509450398364	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1509450398933	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1509450398933	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1509450400705	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.bsb.hike"
+1509450403069	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.bsb.hike"
+1509450403738	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450405087	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450405384	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450435455	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.bsb.hike?clp=qgEUChIKDGNvbS5ic2IuaGlrZRABGAM%3D:S:ANO1ljLhWU0"
+1509450435725	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.bsb.hike?clp=qgEUChIKDGNvbS5ic2IuaGlrZRABGAM%3D:S:ANO1ljLhWU0"
+1509450435729	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.bsb.hike?clp=qgEUChIKDGNvbS5ic2IuaGlrZRABGAM%3D:S:ANO1ljLhWU0"
+1509450436320	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.taggedapp"
+1509450437735	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.taggedapp"
+1509450438173	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450439541	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450439822	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450471390	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.taggedapp?clp=qgEVChMKDWNvbS50YWdnZWRhcHAQARgD:S:ANO1ljKj4Ys"
+1509450471655	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.taggedapp?clp=qgEVChMKDWNvbS50YWdnZWRhcHAQARgD:S:ANO1ljKj4Ys"
+1509450471659	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.taggedapp?clp=qgEVChMKDWNvbS50YWdnZWRhcHAQARgD:S:ANO1ljKj4Ys"
+1509450472402	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.instagram.android"
+1509450473628	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.instagram.android"
+1509450474073	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450474981	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450475304	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450505903	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.instagram.android?clp=qgEdChsKFWNvbS5pbnN0YWdyYW0uYW5kcm9pZBABGAM%3D:S:ANO1ljLVHKE"
+1509450506184	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.instagram.android?clp=qgEdChsKFWNvbS5pbnN0YWdyYW0uYW5kcm9pZBABGAM%3D:S:ANO1ljLVHKE"
+1509450506187	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.instagram.android?clp=qgEdChsKFWNvbS5pbnN0YWdyYW0uYW5kcm9pZBABGAM%3D:S:ANO1ljLVHKE"
+1509450506770	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.facebook.katana"
+1509450507673	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.facebook.katana"
+1509450508106	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450509051	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450509375	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450539347	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.facebook.katana?clp=qgEbChkKE2NvbS5mYWNlYm9vay5rYXRhbmEQARgD:S:ANO1ljLdhmA"
+1509450539608	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.facebook.katana?clp=qgEbChkKE2NvbS5mYWNlYm9vay5rYXRhbmEQARgD:S:ANO1ljLdhmA"
+1509450539611	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.facebook.katana?clp=qgEbChkKE2NvbS5mYWNlYm9vay5rYXRhbmEQARgD:S:ANO1ljLdhmA"
+1509450540258	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.snapchat.android"
+1509450541420	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.snapchat.android"
+1509450541912	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450542781	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450543068	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450579888	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.snapchat.android?clp=qgEcChoKFGNvbS5zbmFwY2hhdC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljLd5Uw"
+1509450580174	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.snapchat.android?clp=qgEcChoKFGNvbS5zbmFwY2hhdC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljLd5Uw"
+1509450580177	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.snapchat.android?clp=qgEcChoKFGNvbS5zbmFwY2hhdC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljLd5Uw"
+1509450580807	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.linkedin.android"
+1509450581916	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.linkedin.android"
+1509450582331	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450583267	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450583553	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450619802	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.linkedin.android?clp=qgEcChoKFGNvbS5saW5rZWRpbi5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljKXHgA"
+1509450620083	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.linkedin.android?clp=qgEcChoKFGNvbS5saW5rZWRpbi5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljKXHgA"
+1509450620087	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.linkedin.android?clp=qgEcChoKFGNvbS5saW5rZWRpbi5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljKXHgA"
+1509450620950	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.myyearbook.m"
+1509450622411	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.myyearbook.m"
+1509450622971	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450624010	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450624345	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450665811	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.myyearbook.m?clp=qgEYChYKEGNvbS5teXllYXJib29rLm0QARgD:S:ANO1ljJVqqk"
+1509450666077	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.myyearbook.m?clp=qgEYChYKEGNvbS5teXllYXJib29rLm0QARgD:S:ANO1ljJVqqk"
+1509450666084	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.myyearbook.m?clp=qgEYChYKEGNvbS5teXllYXJib29rLm0QARgD:S:ANO1ljJVqqk"
+1509450666867	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.skout.android"
+1509450668073	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.skout.android"
+1509450668488	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450669611	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450669909	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450709804	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.skout.android?clp=qgEZChcKEWNvbS5za291dC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljIu5u8"
+1509450710087	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.skout.android?clp=qgEZChcKEWNvbS5za291dC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljIu5u8"
+1509450710091	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.skout.android?clp=qgEZChcKEWNvbS5za291dC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljIu5u8"
+1509450710674	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.waplog.social"
+1509450712688	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.waplog.social"
+1509450713075	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450714478	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450714817	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450756155	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.waplog.social?clp=qgEZChcKEWNvbS53YXBsb2cuc29jaWFsEAEYAw%3D%3D:S:ANO1ljL8QGs"
+1509450756374	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.waplog.social?clp=qgEZChcKEWNvbS53YXBsb2cuc29jaWFsEAEYAw%3D%3D:S:ANO1ljL8QGs"
+1509450756377	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.waplog.social?clp=qgEZChcKEWNvbS53YXBsb2cuc29jaWFsEAEYAw%3D%3D:S:ANO1ljL8QGs"
+1509450756932	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.jaumo"
+1509450774172	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.jaumo"
+1509450774602	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450775568	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450775918	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450809070	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.jaumo?clp=qgERCg8KCWNvbS5qYXVtbxABGAM%3D:S:ANO1ljLferA"
+1509450809548	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.jaumo?clp=qgERCg8KCWNvbS5qYXVtbxABGAM%3D:S:ANO1ljLferA"
+1509450809551	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.jaumo?clp=qgERCg8KCWNvbS5qYXVtbxABGAM%3D:S:ANO1ljLferA"
+1509450810095	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.domobile.applock"
+1509450811794	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.domobile.applock"
+1509450812274	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450813292	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450813649	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450853120	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.domobile.applock?clp=qgEcChoKFGNvbS5kb21vYmlsZS5hcHBsb2NrEAEYAw%3D%3D:S:ANO1ljJpYTM"
+1509450853409	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.domobile.applock?clp=qgEcChoKFGNvbS5kb21vYmlsZS5hcHBsb2NrEAEYAw%3D%3D:S:ANO1ljJpYTM"
+1509450853412	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.domobile.applock?clp=qgEcChoKFGNvbS5kb21vYmlsZS5hcHBsb2NrEAEYAw%3D%3D:S:ANO1ljJpYTM"
+1509450854031	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.cleanmaster.security"
+1509450855272	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.cleanmaster.security"
+1509450855700	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450856798	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450857129	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450891678	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.cleanmaster.security?clp=qgEgCh4KGGNvbS5jbGVhbm1hc3Rlci5zZWN1cml0eRABGAM%3D:S:ANO1ljIvfbw"
+1509450891943	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.cleanmaster.security?clp=qgEgCh4KGGNvbS5jbGVhbm1hc3Rlci5zZWN1cml0eRABGAM%3D:S:ANO1ljIvfbw"
+1509450891946	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.cleanmaster.security?clp=qgEgCh4KGGNvbS5jbGVhbm1hc3Rlci5zZWN1cml0eRABGAM%3D:S:ANO1ljIvfbw"
+1509450892736	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.qihoo.security.lite"
+1509450894073	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.qihoo.security.lite"
+1509450894481	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450895529	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450895836	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450936506	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.qihoo.security.lite?clp=qgEfCh0KF2NvbS5xaWhvby5zZWN1cml0eS5saXRlEAEYAw%3D%3D:S:ANO1ljKDgoc"
+1509450936794	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.qihoo.security.lite?clp=qgEfCh0KF2NvbS5xaWhvby5zZWN1cml0eS5saXRlEAEYAw%3D%3D:S:ANO1ljKDgoc"
+1509450936797	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.qihoo.security.lite?clp=qgEfCh0KF2NvbS5xaWhvby5zZWN1cml0eS5saXRlEAEYAw%3D%3D:S:ANO1ljKDgoc"
+1509450937371	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity"
+1509450938607	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity"
+1509450939061	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450940111	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450940435	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450973546	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.avast.android.mobilesecurity?clp=qgEoCiYKIGNvbS5hdmFzdC5hbmRyb2lkLm1vYmlsZXNlY3VyaXR5EAEYAw%3D%3D:S:ANO1ljKOLfQ"
+1509450973835	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.avast.android.mobilesecurity?clp=qgEoCiYKIGNvbS5hdmFzdC5hbmRyb2lkLm1vYmlsZXNlY3VyaXR5EAEYAw%3D%3D:S:ANO1ljKOLfQ"
+1509450973839	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.avast.android.mobilesecurity?clp=qgEoCiYKIGNvbS5hdmFzdC5hbmRyb2lkLm1vYmlsZXNlY3VyaXR5EAEYAw%3D%3D:S:ANO1ljKOLfQ"
+1509450974455	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.sp.smartgallery.free"
+1509450975425	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.sp.smartgallery.free"
+1509450975842	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450976771	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509450977055	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451015720	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.sp.smartgallery.free?clp=qgEgCh4KGGNvbS5zcC5zbWFydGdhbGxlcnkuZnJlZRABGAM%3D:S:ANO1ljIx6Ko"
+1509451016102	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.sp.smartgallery.free?clp=qgEgCh4KGGNvbS5zcC5zbWFydGdhbGxlcnkuZnJlZRABGAM%3D:S:ANO1ljIx6Ko"
+1509451016106	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.sp.smartgallery.free?clp=qgEgCh4KGGNvbS5zcC5zbWFydGdhbGxlcnkuZnJlZRABGAM%3D:S:ANO1ljIx6Ko"
+1509451016719	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.avira.android"
+1509451017918	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.avira.android"
+1509451018410	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451019398	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451019684	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451051103	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.avira.android?clp=qgEZChcKEWNvbS5hdmlyYS5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljIKVEo"
+1509451051367	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.avira.android?clp=qgEZChcKEWNvbS5hdmlyYS5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljIKVEo"
+1509451051369	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.avira.android?clp=qgEZChcKEWNvbS5hdmlyYS5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljIKVEo"
+1509451052020	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.trustgo.mobile.security"
+1509451053306	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.trustgo.mobile.security"
+1509451053716	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451054705	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451054990	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451092928	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.trustgo.mobile.security?clp=qgEjCiEKG2NvbS50cnVzdGdvLm1vYmlsZS5zZWN1cml0eRABGAM%3D:S:ANO1ljLlVFo"
+1509451093195	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.trustgo.mobile.security?clp=qgEjCiEKG2NvbS50cnVzdGdvLm1vYmlsZS5zZWN1cml0eRABGAM%3D:S:ANO1ljLlVFo"
+1509451093198	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.trustgo.mobile.security?clp=qgEjCiEKG2NvbS50cnVzdGdvLm1vYmlsZS5zZWN1cml0eRABGAM%3D:S:ANO1ljLlVFo"
+1509451093965	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.eset.ems2.gp"
+1509451095186	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.eset.ems2.gp"
+1509451095605	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451096663	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451096959	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451128270	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.eset.ems2.gp?clp=qgEYChYKEGNvbS5lc2V0LmVtczIuZ3AQARgD:S:ANO1ljIYv0E"
+1509451128544	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.eset.ems2.gp?clp=qgEYChYKEGNvbS5lc2V0LmVtczIuZ3AQARgD:S:ANO1ljIYv0E"
+1509451128547	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.eset.ems2.gp?clp=qgEYChYKEGNvbS5lc2V0LmVtczIuZ3AQARgD:S:ANO1ljIYv0E"
+1509451129129	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.piriform.ccleaner"
+1509451130105	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.piriform.ccleaner"
+1509451130503	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451131408	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451131688	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451172396	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.piriform.ccleaner?clp=qgEdChsKFWNvbS5waXJpZm9ybS5jY2xlYW5lchABGAM%3D:S:ANO1ljLJ0fk"
+1509451172674	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.piriform.ccleaner?clp=qgEdChsKFWNvbS5waXJpZm9ybS5jY2xlYW5lchABGAM%3D:S:ANO1ljLJ0fk"
+1509451172677	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.piriform.ccleaner?clp=qgEdChsKFWNvbS5waXJpZm9ybS5jY2xlYW5lchABGAM%3D:S:ANO1ljLJ0fk"
+1509451173274	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.zrgiu.antivirus"
+1509451174969	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.zrgiu.antivirus"
+1509451175405	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451176144	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451176468	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451210021	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.zrgiu.antivirus?clp=qgEbChkKE2NvbS56cmdpdS5hbnRpdmlydXMQARgD:S:ANO1ljLZiEE"
+1509451210286	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.zrgiu.antivirus?clp=qgEbChkKE2NvbS56cmdpdS5hbnRpdmlydXMQARgD:S:ANO1ljLZiEE"
+1509451210289	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.zrgiu.antivirus?clp=qgEbChkKE2NvbS56cmdpdS5hbnRpdmlydXMQARgD:S:ANO1ljLZiEE"
+1509451210862	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.flipkart.android"
+1509451212238	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.flipkart.android"
+1509451212731	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451213619	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451213901	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451245920	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.flipkart.android?clp=qgEcChoKFGNvbS5mbGlwa2FydC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljLbDeU"
+1509451246158	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.flipkart.android?clp=qgEcChoKFGNvbS5mbGlwa2FydC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljLbDeU"
+1509451246162	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.flipkart.android?clp=qgEcChoKFGNvbS5mbGlwa2FydC5hbmRyb2lkEAEYAw%3D%3D:S:ANO1ljLbDeU"
+1509451246722	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.yepme"
+1509451248388	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.yepme"
+1509451248831	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451250059	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451250350	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451281350	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.yepme?clp=qgERCg8KCWNvbS55ZXBtZRABGAM%3D:S:ANO1ljLu9Z4"
+1509451281623	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.yepme?clp=qgERCg8KCWNvbS55ZXBtZRABGAM%3D:S:ANO1ljLu9Z4"
+1509451281626	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.yepme?clp=qgERCg8KCWNvbS55ZXBtZRABGAM%3D:S:ANO1ljLu9Z4"
+1509451282217	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.snapdeal.main"
+1509451283679	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.snapdeal.main"
+1509451284071	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451285028	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451285327	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451317462	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.snapdeal.main?clp=qgEZChcKEWNvbS5zbmFwZGVhbC5tYWluEAEYAw%3D%3D:S:ANO1ljIzcFg"
+1509451317725	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.snapdeal.main?clp=qgEZChcKEWNvbS5zbmFwZGVhbC5tYWluEAEYAw%3D%3D:S:ANO1ljIzcFg"
+1509451317728	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.snapdeal.main?clp=qgEZChcKEWNvbS5zbmFwZGVhbC5tYWluEAEYAw%3D%3D:S:ANO1ljIzcFg"
+1509451318299	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.myntra.android"
+1509451319589	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.myntra.android"
+1509451319958	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451321040	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451321371	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451359221	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.myntra.android?clp=qgEaChgKEmNvbS5teW50cmEuYW5kcm9pZBABGAM%3D:S:ANO1ljIav_A"
+1509451359476	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.myntra.android?clp=qgEaChgKEmNvbS5teW50cmEuYW5kcm9pZBABGAM%3D:S:ANO1ljIav_A"
+1509451359479	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.myntra.android?clp=qgEaChgKEmNvbS5teW50cmEuYW5kcm9pZBABGAM%3D:S:ANO1ljIav_A"
+1509451360058	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.shopclues"
+1509451361156	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.shopclues"
+1509451361608	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451362371	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451362705	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451389678	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.shopclues?clp=qgEVChMKDWNvbS5zaG9wY2x1ZXMQARgD:S:ANO1ljIe9pw"
+1509451389978	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.shopclues?clp=qgEVChMKDWNvbS5zaG9wY2x1ZXMQARgD:S:ANO1ljIe9pw"
+1509451389981	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.shopclues?clp=qgEVChMKDWNvbS5zaG9wY2x1ZXMQARgD:S:ANO1ljIe9pw"
+1509451390580	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.ebay.mobile"
+1509451391715	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.ebay.mobile"
+1509451392174	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451392924	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451393254	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451422953	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.ebay.mobile?clp=qgEXChUKD2NvbS5lYmF5Lm1vYmlsZRABGAM%3D:S:ANO1ljLEwnY"
+1509451423211	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.ebay.mobile?clp=qgEXChUKD2NvbS5lYmF5Lm1vYmlsZRABGAM%3D:S:ANO1ljLEwnY"
+1509451423215	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.ebay.mobile?clp=qgEXChUKD2NvbS5lYmF5Lm1vYmlsZRABGAM%3D:S:ANO1ljLEwnY"
+1509451423810	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.contextlogic.wish"
+1509451424944	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.contextlogic.wish"
+1509451425414	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451426225	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451426511	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451455511	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.contextlogic.wish?clp=qgEdChsKFWNvbS5jb250ZXh0bG9naWMud2lzaBABGAM%3D:S:ANO1ljK3SZY"
+1509451455770	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.contextlogic.wish?clp=qgEdChsKFWNvbS5jb250ZXh0bG9naWMud2lzaBABGAM%3D:S:ANO1ljK3SZY"
+1509451455773	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.contextlogic.wish?clp=qgEdChsKFWNvbS5jb250ZXh0bG9naWMud2lzaBABGAM%3D:S:ANO1ljK3SZY"
+1509451456354	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=net.one97.paytm"
+1509451457504	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=net.one97.paytm"
+1509451458035	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451458955	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451459242	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451491170	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_net.one97.paytm?clp=qgEXChUKD25ldC5vbmU5Ny5wYXl0bRABGAM%3D:S:ANO1ljLMKKQ"
+1509451491416	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_net.one97.paytm?clp=qgEXChUKD25ldC5vbmU5Ny5wYXl0bRABGAM%3D:S:ANO1ljLMKKQ"
+1509451491419	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_net.one97.paytm?clp=qgEXChUKD25ldC5vbmU5Ny5wYXl0bRABGAM%3D:S:ANO1ljLMKKQ"
+1509451492020	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping"
+1509451493324	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping"
+1509451493777	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451494776	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451495105	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451526869	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_in.amazon.mShop.android.shopping?clp=qgEoCiYKIGluLmFtYXpvbi5tU2hvcC5hbmRyb2lkLnNob3BwaW5nEAEYAw%3D%3D:S:ANO1ljKMrsQ"
+1509451527141	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_in.amazon.mShop.android.shopping?clp=qgEoCiYKIGluLmFtYXpvbi5tU2hvcC5hbmRyb2lkLnNob3BwaW5nEAEYAw%3D%3D:S:ANO1ljKMrsQ"
+1509451527145	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_in.amazon.mShop.android.shopping?clp=qgEoCiYKIGluLmFtYXpvbi5tU2hvcC5hbmRyb2lkLnNob3BwaW5nEAEYAw%3D%3D:S:ANO1ljKMrsQ"
+1509451527736	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.jabong.android"
+1509451529226	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.jabong.android"
+1509451529700	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451530579	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451530903	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451562463	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.jabong.android?clp=qgEaChgKEmNvbS5qYWJvbmcuYW5kcm9pZBABGAM%3D:S:ANO1ljKhWq4"
+1509451562653	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.jabong.android?clp=qgEaChgKEmNvbS5qYWJvbmcuYW5kcm9pZBABGAM%3D:S:ANO1ljKhWq4"
+1509451562656	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.jabong.android?clp=qgEaChgKEmNvbS5qYWJvbmcuYW5kcm9pZBABGAM%3D:S:ANO1ljKhWq4"
+1509451563269	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.ea.game.pvz2_row"
+1509451566885	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.ea.game.pvz2_row"
+1509451567339	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451568588	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451568917	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451603177	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.ea.game.pvz2_row?clp=qgEcChoKFGNvbS5lYS5nYW1lLnB2ejJfcm93EAEYAw%3D%3D:S:ANO1ljJqHX4"
+1509451603360	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.ea.game.pvz2_row?clp=qgEcChoKFGNvbS5lYS5nYW1lLnB2ejJfcm93EAEYAw%3D%3D:S:ANO1ljJqHX4"
+1509451603364	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.ea.game.pvz2_row?clp=qgEcChoKFGNvbS5lYS5nYW1lLnB2ejJfcm93EAEYAw%3D%3D:S:ANO1ljJqHX4"
+1509451603948	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.naturalmotion.csrracing"
+1509451617551	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.naturalmotion.csrracing"
+1509451617953	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451619221	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451619504	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451659794	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.naturalmotion.csrracing?clp=qgEjCiEKG2NvbS5uYXR1cmFsbW90aW9uLmNzcnJhY2luZxABGAM%3D:S:ANO1ljL75z0"
+1509451659968	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.naturalmotion.csrracing?clp=qgEjCiEKG2NvbS5uYXR1cmFsbW90aW9uLmNzcnJhY2luZxABGAM%3D:S:ANO1ljL75z0"
+1509451659971	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.naturalmotion.csrracing?clp=qgEjCiEKG2NvbS5uYXR1cmFsbW90aW9uLmNzcnJhY2luZxABGAM%3D:S:ANO1ljL75z0"
+1509451660580	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=uk.co.aifactory.chessfree"
+1509451664292	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=uk.co.aifactory.chessfree"
+1509451664771	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451665486	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451665774	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451700528	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_uk.co.aifactory.chessfree?clp=qgEhCh8KGXVrLmNvLmFpZmFjdG9yeS5jaGVzc2ZyZWUQARgD:S:ANO1ljLUook"
+1509451700713	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_uk.co.aifactory.chessfree?clp=qgEhCh8KGXVrLmNvLmFpZmFjdG9yeS5jaGVzc2ZyZWUQARgD:S:ANO1ljLUook"
+1509451700716	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_uk.co.aifactory.chessfree?clp=qgEhCh8KGXVrLmNvLmFpZmFjdG9yeS5jaGVzc2ZyZWUQARgD:S:ANO1ljLUook"
+1509451701339	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.mgc.rope.hero"
+1509451727412	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.mgc.rope.hero"
+1509451727815	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451728983	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451729359	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451771809	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.mgc.rope.hero?clp=qgEZChcKEWNvbS5tZ2Mucm9wZS5oZXJvEAEYAw%3D%3D:S:ANO1ljJaAsE"
+1509451771975	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.mgc.rope.hero?clp=qgEZChcKEWNvbS5tZ2Mucm9wZS5oZXJvEAEYAw%3D%3D:S:ANO1ljJaAsE"
+1509451771978	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.mgc.rope.hero?clp=qgEZChcKEWNvbS5tZ2Mucm9wZS5oZXJvEAEYAw%3D%3D:S:ANO1ljJaAsE"
+1509451772573	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.extremefungames.mototrafficrace"
+1509451774997	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.extremefungames.mototrafficrace"
+1509451775437	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451776422	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451776708	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451810728	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.extremefungames.mototrafficrace?clp=qgErCikKI2NvbS5leHRyZW1lZnVuZ2FtZXMubW90b3RyYWZmaWNyYWNlEAEYAw%3D%3D:S:ANO1ljK0Yy8"
+1509451810939	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.extremefungames.mototrafficrace?clp=qgErCikKI2NvbS5leHRyZW1lZnVuZ2FtZXMubW90b3RyYWZmaWNyYWNlEAEYAw%3D%3D:S:ANO1ljK0Yy8"
+1509451810943	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.extremefungames.mototrafficrace?clp=qgErCikKI2NvbS5leHRyZW1lZnVuZ2FtZXMubW90b3RyYWZmaWNyYWNlEAEYAw%3D%3D:S:ANO1ljK0Yy8"
+1509451811537	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.fungames.sniper3d"
+1509451822564	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.fungames.sniper3d"
+1509451822968	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451823743	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451824037	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451858137	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.fungames.sniper3d?clp=qgEdChsKFWNvbS5mdW5nYW1lcy5zbmlwZXIzZBABGAM%3D:S:ANO1ljLQo0I"
+1509451858329	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.fungames.sniper3d?clp=qgEdChsKFWNvbS5mdW5nYW1lcy5zbmlwZXIzZBABGAM%3D:S:ANO1ljLQo0I"
+1509451858332	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.fungames.sniper3d?clp=qgEdChsKFWNvbS5mdW5nYW1lcy5zbmlwZXIzZBABGAM%3D:S:ANO1ljLQo0I"
+1509451858924	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.appsomniacs.da2"
+1509451860466	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.appsomniacs.da2"
+1509451860875	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451861783	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451862072	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451888661	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.appsomniacs.da2?clp=qgEbChkKE2NvbS5hcHBzb21uaWFjcy5kYTIQARgD:S:ANO1ljIsxq0"
+1509451888840	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.appsomniacs.da2?clp=qgEbChkKE2NvbS5hcHBzb21uaWFjcy5kYTIQARgD:S:ANO1ljIsxq0"
+1509451888843	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.appsomniacs.da2?clp=qgEbChkKE2NvbS5hcHBzb21uaWFjcy5kYTIQARgD:S:ANO1ljIsxq0"
+1509451889425	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.mgc.miami.crime.simulator.two"
+1509451914187	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.mgc.miami.crime.simulator.two"
+1509451914583	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451915568	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451915860	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451961918	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.mgc.miami.crime.simulator.two?clp=qgEpCicKIWNvbS5tZ2MubWlhbWkuY3JpbWUuc2ltdWxhdG9yLnR3bxABGAM%3D:S:ANO1ljJ182M"
+1509451962069	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.mgc.miami.crime.simulator.two?clp=qgEpCicKIWNvbS5tZ2MubWlhbWkuY3JpbWUuc2ltdWxhdG9yLnR3bxABGAM%3D:S:ANO1ljJ182M"
+1509451962073	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.mgc.miami.crime.simulator.two?clp=qgEpCicKIWNvbS5tZ2MubWlhbWkuY3JpbWUuc2ltdWxhdG9yLnR3bxABGAM%3D:S:ANO1ljJ182M"
+1509451962633	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.melimots.WordSearch"
+1509451963628	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.melimots.WordSearch"
+1509451964061	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451964730	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509451965066	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452007445	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.melimots.WordSearch?clp=qgEfCh0KF2NvbS5tZWxpbW90cy5Xb3JkU2VhcmNoEAEYAw%3D%3D:S:ANO1ljL4JPs"
+1509452007618	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.melimots.WordSearch?clp=qgEfCh0KF2NvbS5tZWxpbW90cy5Xb3JkU2VhcmNoEAEYAw%3D%3D:S:ANO1ljL4JPs"
+1509452007621	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.melimots.WordSearch?clp=qgEfCh0KF2NvbS5tZWxpbW90cy5Xb3JkU2VhcmNoEAEYAw%3D%3D:S:ANO1ljL4JPs"
+1509452008218	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=l.t.t.rivercrossingiq"
+1509452009924	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=l.t.t.rivercrossingiq"
+1509452010372	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452011883	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452012221	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452035028	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_l.t.t.rivercrossingiq?clp=qgEdChsKFWwudC50LnJpdmVyY3Jvc3NpbmdpcRABGAM%3D:S:ANO1ljJbM-c"
+1509452035213	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_l.t.t.rivercrossingiq?clp=qgEdChsKFWwudC50LnJpdmVyY3Jvc3NpbmdpcRABGAM%3D:S:ANO1ljJbM-c"
+1509452035216	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_l.t.t.rivercrossingiq?clp=qgEdChsKFWwudC50LnJpdmVyY3Jvc3NpbmdpcRABGAM%3D:S:ANO1ljJbM-c"
+1509452035823	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.cyberlink.photodirector"
+1509452037359	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.cyberlink.photodirector"
+1509452037779	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452038706	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452039126	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452075765	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.cyberlink.photodirector?clp=qgEjCiEKG2NvbS5jeWJlcmxpbmsucGhvdG9kaXJlY3RvchABGAM%3D:S:ANO1ljK7iJk"
+1509452075938	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.cyberlink.photodirector?clp=qgEjCiEKG2NvbS5jeWJlcmxpbmsucGhvdG9kaXJlY3RvchABGAM%3D:S:ANO1ljK7iJk"
+1509452075941	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.cyberlink.photodirector?clp=qgEjCiEKG2NvbS5jeWJlcmxpbmsucGhvdG9kaXJlY3RvchABGAM%3D:S:ANO1ljK7iJk"
+1509452076562	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.pipcamera.activity"
+1509452077938	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.pipcamera.activity"
+1509452078441	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452079782	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452080074	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452115004	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.pipcamera.activity?clp=qgEeChwKFmNvbS5waXBjYW1lcmEuYWN0aXZpdHkQARgD:S:ANO1ljK5LDc"
+1509452115222	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.pipcamera.activity?clp=qgEeChwKFmNvbS5waXBjYW1lcmEuYWN0aXZpdHkQARgD:S:ANO1ljK5LDc"
+1509452115225	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.pipcamera.activity?clp=qgEeChwKFmNvbS5waXBjYW1lcmEuYWN0aXZpdHkQARgD:S:ANO1ljK5LDc"
+1509452115829	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.meihillman.photocollage"
+1509452117858	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.meihillman.photocollage"
+1509452118240	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452119443	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452119727	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452162478	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.meihillman.photocollage?clp=qgEjCiEKG2NvbS5tZWloaWxsbWFuLnBob3RvY29sbGFnZRABGAM%3D:S:ANO1ljK5-MM"
+1509452162680	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.meihillman.photocollage?clp=qgEjCiEKG2NvbS5tZWloaWxsbWFuLnBob3RvY29sbGFnZRABGAM%3D:S:ANO1ljK5-MM"
+1509452162684	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.meihillman.photocollage?clp=qgEjCiEKG2NvbS5tZWloaWxsbWFuLnBob3RvY29sbGFnZRABGAM%3D:S:ANO1ljK5-MM"
+1509452163265	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.picsart.studio"
+1509452164660	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.picsart.studio"
+1509452165094	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452166319	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452166669	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452201937	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.picsart.studio?clp=qgEaChgKEmNvbS5waWNzYXJ0LnN0dWRpbxABGAM%3D:S:ANO1ljKdVRI"
+1509452202120	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.picsart.studio?clp=qgEaChgKEmNvbS5waWNzYXJ0LnN0dWRpbxABGAM%3D:S:ANO1ljKdVRI"
+1509452202123	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.picsart.studio?clp=qgEaChgKEmNvbS5waWNzYXJ0LnN0dWRpbxABGAM%3D:S:ANO1ljKdVRI"
+1509452202731	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.pcvirt.ImageEditor"
+1509452205325	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.pcvirt.ImageEditor"
+1509452205734	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452206494	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452206835	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452242878	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.pcvirt.ImageEditor?clp=qgEeChwKFmNvbS5wY3ZpcnQuSW1hZ2VFZGl0b3IQARgD:S:ANO1ljLdmuc"
+1509452243057	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.pcvirt.ImageEditor?clp=qgEeChwKFmNvbS5wY3ZpcnQuSW1hZ2VFZGl0b3IQARgD:S:ANO1ljLdmuc"
+1509452243060	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.pcvirt.ImageEditor?clp=qgEeChwKFmNvbS5wY3ZpcnQuSW1hZ2VFZGl0b3IQARgD:S:ANO1ljLdmuc"
+1509452243697	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.flayvr.flayvr"
+1509452245832	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.flayvr.flayvr"
+1509452246244	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452247322	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452247606	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1509452277918	Marionette	DEBUG	Received DOM event "beforeunload" for "https://play.google.com/store/apps/collection/similar_apps_com.flayvr.flayvr?clp=qgEZChcKEWNvbS5mbGF5dnIuZmxheXZyEAEYAw%3D%3D:S:ANO1ljJCHbw"
+1509452278047	Marionette	DEBUG	Received DOM event "pagehide" for "https://play.google.com/store/apps/collection/similar_apps_com.flayvr.flayvr?clp=qgEZChcKEWNvbS5mbGF5dnIuZmxheXZyEAEYAw%3D%3D:S:ANO1ljJCHbw"
+1509452278051	Marionette	DEBUG	Received DOM event "unload" for "https://play.google.com/store/apps/collection/similar_apps_com.flayvr.flayvr?clp=qgEZChcKEWNvbS5mbGF5dnIuZmxheXZyEAEYAw%3D%3D:S:ANO1ljJCHbw"
+1509452278087	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+1509452278224	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: This operation requires zeroing texture data. This is slow.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL warning: texSubImage2D: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+JavaScript warning: https://www.google.co.in/maps?source=tldso, line 4068: Error: WebGL: No further warnings will be reported for this WebGL context. (already reported 32 warnings)
+1509453691893	Marionette	DEBUG	Register listener.js for window 4294967297
+ExceptionHandler::GenerateDump cloned child 17232
+ExceptionHandler::WaitForContinueSignal waiting for continue signal...
+ExceptionHandler::SendContinueSignalToChild sent continue signal to child
+[Parent 9790] WARNING: pipe error (138): Connection reset by peer: file /build/firefox-l1g98U/firefox-56.0+build6/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 9790] WARNING: pipe error (136): Connection reset by peer: file /build/firefox-l1g98U/firefox-56.0+build6/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1509454473514	geckodriver	INFO	geckodriver 0.18.0
+1509454473522	geckodriver	INFO	Listening on 127.0.0.1:59059
+1509454474638	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1509454474908	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1509454475628	Marionette	INFO	Enabled via --marionette
+1509454478943	Marionette	INFO	Listening on port 44209
+1509454478970	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509454479000	Marionette	DEBUG	Register listener.js for window 2147483649
+1509454479044	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1509454479391	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1509454479392	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1509454479827	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+1509454480226	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1509454495123	geckodriver	INFO	geckodriver 0.18.0
+1509454495125	geckodriver	INFO	Listening on 127.0.0.1:49689
+1509454496202	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1509454496375	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1509454497016	Marionette	INFO	Enabled via --marionette
+1509454499544	Marionette	INFO	Listening on port 36809
+1509454499622	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509454499649	Marionette	DEBUG	Register listener.js for window 2147483649
+1509454499663	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1509454499997	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1509454499997	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1509454500715	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+1509454501078	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1509454515277	geckodriver	INFO	geckodriver 0.18.0
+1509454515281	geckodriver	INFO	Listening on 127.0.0.1:35319
+1509454516403	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1509454516625	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///usr/lib/firefox/omni.ja!/components/addonManager.js:65
+1509454517241	Marionette	INFO	Enabled via --marionette
+1509454520089	Marionette	INFO	Listening on port 42367
+1509454520137	Marionette	WARN	TLS certificate errors will be ignored for this session
+1509454520170	Marionette	DEBUG	Register listener.js for window 2147483649
+1509454520181	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1509454520493	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1509454520493	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1509454520922	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+1509454521252	Marionette	DEBUG	Received DOM event "pageshow" for "https://play.google.com/store/apps/details?id=com.irisstudio.photomixer\"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

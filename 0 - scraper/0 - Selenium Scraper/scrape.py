@@ -16,8 +16,8 @@ os.system('PATH=$PATH:.')
 db = DB('play.db')
 # db.create_tables()
 # db.truncate_all()
-db.add_seeds('seed.txt')
-browser = webdriver.Firefox()
+# db.add_seeds('seed.txt')
+browser = webdriver.Chrome()
 
 count = 0
 
